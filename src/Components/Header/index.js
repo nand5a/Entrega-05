@@ -20,7 +20,7 @@ export default function Header() {
 
     return (
         <Head>
-            <HeaderName>Bolo</HeaderName>
+            <HeaderName>Êta, bolo de rolo</HeaderName>
             <HeaderMenu>{renderList}</HeaderMenu>
         </Head>
     )
