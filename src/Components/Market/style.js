@@ -53,7 +53,7 @@ export const ResetButton = styled.button`
     height: 5vh;
     border: none;
     border-radius: 10px;
-    background-color: cornflowerblue;
+    background-color: ${props => props.disabled ? "red" : "cornflowerblue"};
     color: antiquewhite;
     font-size: large;
     padding-right: 10px;
@@ -64,6 +64,7 @@ export const ResetButton = styled.button`
     &:hover{
         cursor: pointer;
     }
+
 `;
 
 export const AddButton = styled.button`
@@ -91,6 +92,7 @@ export const MarketContent = styled.div`
     align-items: center;
     justify-content: center;
     gap: 4vh;
+    margin-bottom: 10%
 
 `;
 
