@@ -14,7 +14,7 @@ export const Head = styled.header`
     justify-content: space-between;
     padding-top: 4%;
     padding-bottom: 2%;
-    background-color: blue;
+    background-color: cornflowerblue;
 `;
 
 export const HeaderName = styled.h1`
@@ -27,4 +27,5 @@ export const HeaderMenu = styled.li`
     display: flex;
     gap: 5vh;
     padding-right: 3%;
+    color: antiquewhite;
 `;

@@ -110,6 +110,4 @@ export const CardList = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     list-style: none;
-    width: 20vw;
-    background-color: blue;
 `;

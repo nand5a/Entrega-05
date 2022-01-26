@@ -8,6 +8,5 @@ export default function Novidades() {
         <Container>
             <img class="foto" src={flyer} alt="imagem" height={400}/>  
         </Container>
-
     );
 }
