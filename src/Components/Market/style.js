@@ -83,7 +83,6 @@ export const AddButton = styled.button`
     &:hover{
         cursor: pointer;
     }
-
 `;
 
 export const MarketContent = styled.div`
