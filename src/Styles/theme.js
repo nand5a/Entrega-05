@@ -3,5 +3,6 @@ export const theme = {
         background: "uniquewhite",
         primary: "cornflowerblue",
         text: "#fff",
+        footer: "grey"
     }
 }

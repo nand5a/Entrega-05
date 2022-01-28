@@ -1,6 +1,7 @@
 import React from 'react';
-import Header from "../../Components/Header";
-import { Content, MarketList, AddButton, Title, Product } from './styles';
+import { Header } from "../../Components/Header";
+import { Footer } from '../../Components/Footer';
+import { Content, MarketList, AddButton, Title, Product, DetailsLink } from './styles';
 import docedeleite from '../../Assets/docedeleite.jpg';
 import goiabada from '../../Assets/goiabada.jpg';
 import chocolate from '../../Assets/chocolate.jpg';                                 
@@ -45,7 +46,7 @@ export function Market(){
                                     <h2>{product.name}</h2>
                                     <h3>{product.flavor}</h3>
                                     <h3>{product.price.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}</h3>
-                                    <a href="/">Ver detalhes</a>
+                                    <DetailsLink to={'/detalhes-produto/${product.id}'} state={product}>Ver detalhes</DetailsLink>
                                     <AddButton>Adicionar ao Carrinho</AddButton>
                                 </Product>
                             )
@@ -53,6 +54,7 @@ export function Market(){
                     }
                 </MarketList>
             </Content>
+            <Footer/>
         </div>
     );
 }

@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { AiFillStar, AiFillShopping } from "react-icons/ai";
 import { FaShoppingCart } from "react-icons/fa";
-import { Head, HeaderName, HeaderMenu, MenuItem } from './styled';
+import { Head, HeaderName, HeaderMenu, ItemsLink } from './styled';
 
-export default function Header() {
+export function Header() {
     const itensMenu = [
         {nome: "NOVIDADES", icone: <AiFillStar/>, path: "/"},
         {nome: "NOSSOS PRODUTOS", icone: <AiFillShopping/>, path: "/produtos"},
@@ -19,10 +19,10 @@ export default function Header() {
                     itensMenu.map((item, index) => {
                         return(
                             <li key={index}>
-                                <Link to={item.path}>
+                                <ItemsLink to={item.path}>
                                     {item.icone}
                                     {item.nome}
-                                </Link>
+                                </ItemsLink>
                             </li>
                         )
                     })

@@ -1,15 +1,8 @@
 import styled from "styled-components";
-
-export const MenuItem = styled.h3`
-    height: 5vh;
-    font-weight:bolder;
-    &:hover{
-        color:springgreen;
-        border-bottom: 2px solid silver;
-    }
-`;
+import { Link } from "react-router-dom"
 
 export const Head = styled.header`
+    height: 5vh;
     display: flex;
     justify-content: space-between;
     padding-top: 4%;
@@ -20,6 +13,7 @@ export const Head = styled.header`
 export const HeaderName = styled.h1`
     padding-left: 3%;
     color: ${props => props.theme.colors.text};
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 
 
@@ -28,18 +22,15 @@ export const HeaderMenu = styled.ul`
     gap: 5vh;
     padding-right: 3%;
     color: ${props => props.theme.colors.text};
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 
-export const itensMenu = styled.li`
-        font-size: 20px;
-
-    a{
-        text-decoration: none;
-        color: $props => props.theme.colors.text};
-        translation: filter .2s;
-    }
-
-    a:hover{
+export const ItemsLink = styled(Link)`
+    font-size: 20px;
+    text-decoration: none;
+    color: ${props => props.theme.colors.text};
+    translation: filter .2s;
+    &:hover {
         filter: brightness(0.8);
     }
 `
