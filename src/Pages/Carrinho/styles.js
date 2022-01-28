@@ -22,4 +22,7 @@ export const Title = styled.h1`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 
-export const CarrinhoContent = styled.div``
+export const CarrinhoContent = styled.div`
+    height: 83vh;
+    width: 100vw;
+`

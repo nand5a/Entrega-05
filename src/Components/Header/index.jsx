@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import { AiFillStar, AiFillShopping } from "react-icons/ai";
 import { FaShoppingCart } from "react-icons/fa";
 import { Head, HeaderName, HeaderMenu, ItemsLink } from './styled';

@@ -46,7 +46,7 @@ export function Market(){
                                     <h2>{product.name}</h2>
                                     <h3>{product.flavor}</h3>
                                     <h3>{product.price.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}</h3>
-                                    <DetailsLink to={'/detalhes-produto/${product.id}'} state={product}>Ver detalhes</DetailsLink>
+                                    <DetailsLink to={`/detalhes-produto/${product.id}`} state={product}>Ver detalhes</DetailsLink>
                                     <AddButton>Adicionar ao Carrinho</AddButton>
                                 </Product>
                             )
